@@ -17,7 +17,7 @@ public class DeveloperRestControllerV1 {
             new Developer(1L, "Some name", "Second name"),
             new Developer(2L, "Some name", "Second name"),
             new Developer(3L, "Some name", "Third name")
-    ).collect(Collectors.toList());
+    ).toList();
 
     @GetMapping
     public List<Developer> getAll() {
